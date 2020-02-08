@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.10.0
+
+- **Add:** add new parameters to `Tilesets#listTilesets`: `type`, `limit`, `sortBy`, `start` and `visibility`.
+- **Add:** add `Tilesets#tileJSONMetadata` method to retrieve a Tileset TileJSON metadata.
+- **Add:** add new `metadata` parameter to `Styles#getStyle` to preserve `mapbox:` specific metadata from the style.
+- **Add:** add new Tilesets methods `deleteTileset`, `createTilesetSource`, `getTilesetSource`, `listTilesetSources`, `deleteTilesetSource`, `createTileset`, `publishTileset`, `tilesetStatus`, `tilesetJob`, `listTilesetJobs`, `getTilesetsQueue`, `validateRecipe`, `getRecipe`, `updateRecipe`.
+- **Add:** add new `draft` parameter to `Styles#getStyle`, `Styles#deleteStyleIcon` and `Styles#getStyleSprite`, `Styles#getEmbeddableHtml` to work with draft styles.
+- **Fix:** Fix responses containing binary data when using `Static#getStaticImage`, `Styles#getStyleSprite` and `Styles#getFontGlyphRange`.
+- **Fix:** Fix requests for highres sprites in `Styles#getStyleSprite`.
+
 ## 0.9.0
 
 - **Add:** add Isochrone API service.
